@@ -1,0 +1,822 @@
+/* style.css */
+/* Import font Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 20px 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: white;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 10px;
+    /* margin-top: 5px;  */
+    color: #362a1a;
+}
+
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/public/aset/bg-header.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    color: white;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-content span {
+    color: #edc746;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #edc746;
+    color: black;
+}
+/* =================================================================== */
+
+.about-us {
+    min-height: 100vh;
+    background-image: url("/public/aset/about-us.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 165px 0;
+}
+
+.about-content {
+    max-width: 1000px;
+    text-align: center;
+    color: white;
+    padding: 0 165px;
+    min-height: 20vh; /* Tambahkan minimum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Membuat jarak antara konten dan logo */
+}
+
+.about-content h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.about-content h2 span {
+    color: #edc746;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+
+.about-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 2px;
+    margin-top: 100px;
+}
+
+.about-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-text .wildlife {
+    font-size: 24px;
+    font-weight: 600;
+    color: #edc746;
+}
+
+.logo-text .harmony {
+    font-size: 24px;
+    font-weight: 600;
+    color: #f4812e;
+}
+
+/* =================================================================== */
+
+.our-goals {
+    min-height: 100vh;
+    background-color: #211400;
+    background-size: cover;
+    background-position: center;
+    padding: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-goals h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.our-goals h2 span {
+    color: #ffd700;
+}
+
+.goals-list {
+    list-style: none;
+    padding: 0;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.goal-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.goal-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(71%) sepia(93%) saturate(456%)
+        hue-rotate(358deg) brightness(103%) contrast(104%); /* Membuat icon menjadi warna kuning */
+}
+
+.goal-content {
+    flex: 1;
+}
+
+.goal-content h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.goal-content p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.goal-item:hover .goal-icon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.goal-item:hover .goal-content h3 {
+    color: #edc746;
+    transition: color 0.3s ease;
+}
+
+/* =================================================== */
+.services-section {
+    background-image: url("/public/aset/bg-services.png");
+    background-size: cover;
+    padding: 4rem 2rem;
+}
+
+.services-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.services-title h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+}
+
+.services-title span {
+    color: #edc746;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-table {
+    width: 100%;
+    border-spacing: 60px;
+    table-layout: fixed;
+}
+
+.service-cell {
+    width: 50%;
+    vertical-align: top;
+    height: 450px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    margin: 15px 0;
+    color: #333;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+
+
+/* ==================================================== */
+.articles-section {
+    padding: 2rem;
+    background: #fff;
+}
+
+.articles-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background-color: #daa520;
+    color: #fff;
+}
+
+.wildlife-article {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.animal-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    color: #333;
+}
+
+.article-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.featured-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.featured-image:hover {
+    transform: scale(1.05);
+}
+
+.article-content {
+    padding: 2rem;
+}
+
+.content-section {
+    margin-bottom: 2rem;
+}
+
+.content-section h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #daa520;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.content-section p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.highlight-text {
+    color: #c41e3a;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .articles-title {
+        font-size: 2rem;
+    }
+
+    .animal-title {
+        font-size: 1.75rem;
+    }
+
+    .article-image {
+        height: 300px;
+    }
+
+    .article-content {
+        padding: 1.5rem;
+    }
+
+    .content-section h4 {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .articles-section {
+        padding: 1rem;
+    }
+
+    .article-image {
+        height: 250px;
+    }
+
+    .content-section h4 {
+        font-size: 1.1rem;
+    }
+}
+
+/* ================================ */
+/* Sign Up Section */
+.signup-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/public/aset/bg-feedback.png") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.signup-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.signup-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+.signup-title span {
+    color: #c4a81e;
+}
+
+.signup-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #bfbdb2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #a3182f;
+}
+
+.popup-message {
+    margin-top: 1rem;
+    text-align: center;
+    color: #c41e3a;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .signup-container {
+        padding: 1.5rem;
+    }
+
+    .signup-title {
+        font-size: 1.75rem;
+    }
+
+    .signup-form input {
+        padding: 0.5rem;
+    }
+
+    .signup-form button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .signup-container {
+        padding: 1rem;
+    }
+
+    .signup-title {
+        font-size: 1.5rem;
+    }
+
+    .signup-form input {
+        padding: 0.5rem;
+    }
+
+    .signup-form button {
+        font-size: 0.875rem;
+    }
+}
+
+
+
+button[type="submit"]:hover {
+    background: #edc746;
+}
+
+.popup-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    animation: slideDown 0.5s ease forwards;
+}
+
+.popup-message.error {
+    background-color: #f44336;
+}
+
+.popup-message.success {
+    background-color: #4caf50;
+}
+
+@keyframes slideDown {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 20px;
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+/* @media screen and (max-width: 768px) {
+    .feedback-title {
+        font-size: 2rem;
+    }
+
+    .feedback-form {
+        gap: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .feedback-section {
+        padding: 2rem 1rem;
+    }
+
+    .feedback-title {
+        font-size: 1.75rem;
+    }
+} */
+
+/* ==================================== */
+footer {
+    background-color: #211400; /* Dark background color */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-section li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ffd700; /* Hover effect */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+/* ====================================== */
+.gallery-container {
+    padding: 12rem 6rem;
+    background-image: url("/public/aset/bg-gallery.png");
+    min-height: 100vh;
+}
+
+.gallery-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: white;
+}
+
+.gallery-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.gallery-header .highlight {
+    color: #ffd700;
+}
+
+.gallery-header p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-header h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        padding: 3rem 1rem;
+    }
+
+    .gallery-header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-header h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-item img {
+        height: 250px;
+    }
+}
+
+/* Profile Page Styles */
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.profile-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.profile-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="email"],
+.profile-container input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.profile-container button[type="button"],
+.profile-container button[type="submit"] {
+    padding: 0.75rem;
+    background-color: #c41e3a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.profile-container button[type="button"]:hover,
+.profile-container button[type="submit"]:hover {
+    background-color: #a3182f;
+}
